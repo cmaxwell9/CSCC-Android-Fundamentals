@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/fundamentals.iml" filepath="$PROJECT_DIR$/fundamentals.iml" />
       <module fileurl="file://$PROJECT_DIR$/week-01/week-01.iml" filepath="$PROJECT_DIR$/week-01/week-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/week-02/week-02.iml" filepath="$PROJECT_DIR$/week-02/week-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week-03/week-03.iml" filepath="$PROJECT_DIR$/week-03/week-03.iml" />
     </modules>
   </component>
 </project>
