@@ -42,6 +42,14 @@ public class Main {
             System.out.println("Enter the temperature for the next five days for " + cityName
                 + " (separate each temperature with a space).");
             String userInput = scanner.nextLine();
+
+            /*
+            split the string into an array based on the
+            pattern specified to split(). Instead of
+            spaces, we could have used commas:
+            userInput.split(",")
+            */
+
             String[] stringTemps = userInput.split(" ");
 
             List<Double> doubleTemps = new ArrayList<>();
