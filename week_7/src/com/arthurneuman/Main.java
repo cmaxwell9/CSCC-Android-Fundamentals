@@ -77,7 +77,10 @@ class ThunderStorm extends Storm {
 
     }
 
-    public void displayLightningStrikes() {
+    @Override
+    public void display() {
+        super.display();
+
         String message;
         if (numberOfLightningStrikes == 1) {
             message = "There has been one lightning strike ";
@@ -90,13 +93,17 @@ class ThunderStorm extends Storm {
         message += "for the storm at (" + getLatitude() + ", " + getLongitude() + ").";
         System.out.println(message);
     }
+
+    public void display(String message){
+        display();
+        System.out.println(message);
+    }
 }
 
 public class Main {
     public static void main(String[] args) {
         ThunderStorm thunderStorm = new ThunderStorm(39.970, -82.989, 5,
                 Direction.East, 20);
-        thunderStorm.display();
-        thunderStorm.displayLightningStrikes();
+        thunderStorm.display("This is a message.");
     }
 }
